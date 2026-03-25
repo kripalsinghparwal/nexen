@@ -1,0 +1,197 @@
+[
+    {
+      "stateCode": 13,
+      "stateName": "Allahabad High Court",
+      "benches": [
+        { "court_complex_code": "1", "name": "Allahabad High Court" },
+        { "court_complex_code": "2", "name": "Allahabad High Court Lucknow Bench" }
+      ]
+    },
+    {
+      "stateCode": 1,
+      "stateName": "Bombay High Court",
+      "benches": [
+        { "court_complex_code": "1", "name": "Appellate Side, Bombay" },
+        { "court_complex_code": "2", "name": "Original Side, Bombay" },
+        { "court_complex_code": "3", "name": "Bench at Aurangabad" },
+        { "court_complex_code": "4", "name": "Bench at Nagpur" },
+        { "court_complex_code": "5", "name": "High court of Bombay at Goa" },
+        { "court_complex_code": "6", "name": "Special Court (TORTS) Bombay" }
+      ]
+    },
+    {
+      "stateCode": 16,
+      "stateName": "Calcutta High Court",
+      "benches": [
+        { "court_complex_code": "3", "name": "Appellate side" },
+        { "court_complex_code": "2", "name": "Circuit Bench At Jalpaiguri" },
+        { "court_complex_code": "4", "name": "Circuit Bench At Port Blair" },
+        { "court_complex_code": "1", "name": "Original Side" }
+      ]
+    },
+    {
+      "stateCode": 6,
+      "stateName": "Gauhati High Court",
+      "benches": [
+        { "court_complex_code": "3", "name": "Aizawl Bench" },
+        { "court_complex_code": "4", "name": "Itanagar Bench" },
+        { "court_complex_code": "2", "name": "Kohima Bench" },
+        { "court_complex_code": "1", "name": "Principal Seat at Guwahati" }
+      ]
+    },
+    {
+      "stateCode": 29,
+      "stateName": "High Court for State of Telangana",
+      "benches": [
+        { "court_complex_code": "1", "name": "Principal Bench at Hyderabad" }
+      ]
+    },
+    {
+      "stateCode": 2,
+      "stateName": "High Court of Andhra Pradesh",
+      "benches": [
+        { "court_complex_code": "1", "name": "Principal Bench at Andhra Pradesh" }
+      ]
+    },
+    {
+      "stateCode": 18,
+      "stateName": "High Court of Chhattisgarh",
+      "benches": [
+        { "court_complex_code": "1", "name": "Principal Bench Chhattisgarh" }
+      ]
+    },
+    {
+      "stateCode": 26,
+      "stateName": "High Court of Delhi",
+      "benches": [
+        { "court_complex_code": "1", "name": "Principal Bench at Delhi" }
+      ]
+    },
+    {
+      "stateCode": 17,
+      "stateName": "High Court of Gujarat",
+      "benches": [
+        { "court_complex_code": "1", "name": "Gujarat High Court" }
+      ]
+    },
+    {
+      "stateCode": 5,
+      "stateName": "High Court of Himachal Pradesh",
+      "benches": [
+        { "court_complex_code": "1", "name": "High Court of Himachal Pradesh" }
+      ]
+    },
+    {
+      "stateCode": 12,
+      "stateName": "High Court of Jammu and Kashmir",
+      "benches": [
+        { "court_complex_code": "1", "name": "Jammu Wing" },
+        { "court_complex_code": "2", "name": "Srinagar Wing" }
+      ]
+    },
+    {
+      "stateCode": 7,
+      "stateName": "High Court of Jharkhand",
+      "benches": [
+        { "court_complex_code": "1", "name": "Principal Bench Jharkhand" }
+      ]
+    },
+    {
+      "stateCode": 3,
+      "stateName": "High Court of Karnataka",
+      "benches": [
+        { "court_complex_code": "2", "name": "Bench at Dharwad" },
+        { "court_complex_code": "3", "name": "Bench at Kalburagi" },
+        { "court_complex_code": "1", "name": "Principal Bench at Bengaluru" }
+      ]
+    },
+    {
+      "stateCode": 4,
+      "stateName": "High Court of Kerala",
+      "benches": [
+        { "court_complex_code": "1", "name": "High Court of Kerala" }
+      ]
+    },
+    {
+      "stateCode": 23,
+      "stateName": "High Court of Madhya Pradesh",
+      "benches": [
+        { "court_complex_code": "3", "name": "High Court Of Madhya Pradesh Gwalior" },
+        { "court_complex_code": "2", "name": "High Court Of Madhya Pradesh Indore" },
+        { "court_complex_code": "1", "name": "High Court Of Madhya Pradesh Jabalpur" }
+      ]
+    },
+    {
+      "stateCode": 25,
+      "stateName": "High Court of Manipur",
+      "benches": [
+        { "court_complex_code": "1", "name": "High Court of Manipur" }
+      ]
+    },
+    {
+      "stateCode": 21,
+      "stateName": "High Court of Meghalaya",
+      "benches": [
+        { "court_complex_code": "1", "name": "High Court of Meghalaya" }
+      ]
+    },
+    {
+      "stateCode": 11,
+      "stateName": "High Court of Orissa",
+      "benches": [
+        { "court_complex_code": "1", "name": "High Court of Orissa" }
+      ]
+    },
+    {
+      "stateCode": 22,
+      "stateName": "High Court of Punjab and Haryana",
+      "benches": [
+        { "court_complex_code": "1", "name": "High Court of Punjab and Haryana" }
+      ]
+    },
+    {
+      "stateCode": 9,
+      "stateName": "High Court of Rajasthan",
+      "benches": [
+        { "court_complex_code": "1", "name": "High Court Bench at Jaipur" },
+        { "court_complex_code": "2", "name": "Rajasthan High Court Principal Seat Jodhpur" }
+      ]
+    },
+    {
+      "stateCode": 24,
+      "stateName": "High Court of Sikkim",
+      "benches": [
+        { "court_complex_code": "1", "name": "High Court of Sikkim" }
+      ]
+    },
+    {
+      "stateCode": 20,
+      "stateName": "High Court of Tripura",
+      "benches": [
+        { "court_complex_code": "1", "name": "High Court of Tripura" }
+      ]
+    },
+    {
+      "stateCode": 15,
+      "stateName": "High Court of Uttarakhand",
+      "benches": [
+        { "court_complex_code": "1", "name": "High Court of Uttarakhand" }
+      ]
+    },
+    {
+      "stateCode": 10,
+      "stateName": "Madras High Court",
+      "benches": [
+        { "court_complex_code": "2", "name": "Madurai Bench of Madras High Court" },
+        { "court_complex_code": "1", "name": "Principal Bench of Madras High Court" }
+      ]
+    },
+    {
+      "stateCode": 8,
+      "stateName": "Patna High Court",
+      "benches": [
+        { "court_complex_code": "1", "name": "Principal Bench Patna" }
+      ]
+    }
+  ]
+  
