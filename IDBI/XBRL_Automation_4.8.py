@@ -7,14 +7,20 @@ import os
 import psutil
 import pandas as pd
 
+tool_path = r"D:\MCA\XBRLTool.exe"
+tool_dir = os.path.dirname(tool_path)
+
+
 def initiate_XBRL_tool(selected_taxanomy):
     ########################### Open XBRL tool ###################################################
-    app = Application(backend="uia").start(
-        r"C:\Users\PC\Documents\MCA_XBRL_Valiation_Tool_V5.1@16-09-2025\XBRLTool.exe"
-    )
     # app = Application(backend="uia").start(
-    #     r"C:\Users\PC\Downloads\MCA_XBRL_Valiation_Tool_V4.8\XBRLTool.exe"
+    #     r"C:\Users\PC\Documents\MCA_XBRL_Valiation_Tool_V5.1@16-09-2025\XBRLTool.exe"
     # )
+    app = Application(backend="uia").start(
+    f'"{tool_path}"',
+    work_dir=tool_dir   # ✅ CRITICAL FIX
+    )
+
     
     dlg = Desktop(backend="uia").window(title_re=".*XBRL Validation Tool.*")
 
@@ -73,19 +79,20 @@ def process_xml(xml_file, selected_taxanomy):
         time.sleep(2)
         # Ensure cursor is in File name box
         send_keys('%N')          # Alt+N → File name (standard)
-        time.sleep(0.5)
+        time.sleep(1)
 
         # ---------------- Enter xml path in input file name box then click open and wait for processing ---------------- #
         # send_keys(r'D:\Nexensus_Projects\IDBI\aoc4_xml\564679389_L15421UP1993PLC018642-FS-2024-2025_10.xml')
         send_keys(pdf_path)
-        time.sleep(0.5)
+        time.sleep(2)
         send_keys('{ENTER}')
-        time.sleep(0.2)
+        time.sleep(1)
 
         # Access Document loaded successfull dialog
         doc_loading_dlg = dlg.child_window(title="Document has been loaded successfully..", control_type="Window")
         incorrect_schema_dlg = dlg.child_window(title="INFORMATION MESSAGE", control_type="Window")
         incorrect_taxanomy_dlg = dlg.child_window(title="MCA 21 validation Tool", control_type="Window")
+        restart_tool_dlg = dlg.child_window(title="MCA21 XBRL Validation Tool", control_type="Window")
         if incorrect_schema_dlg.exists(timeout=60) or incorrect_taxanomy_dlg.exists(timeout=60):
             if incorrect_schema_dlg.exists():
                 print("Incorrect Schema")
@@ -108,6 +115,17 @@ def process_xml(xml_file, selected_taxanomy):
                 pass
             return False
             # continue
+        # elif restart_tool_dlg.exists(timeout=250):
+        #     # elif restart_tool_dlg.exists():
+        #     print("Restart the tool")
+        #     send_keys('{ENTER}')
+        #     time.sleep(3)
+        #     try:
+        #         close_XBRL(dlg)
+        #     except:
+        #         pass
+        #     return False
+
 
         doc_loading_dlg.wait("visible", timeout=600)
         time.sleep(0.5)
@@ -158,6 +176,12 @@ else:
     non_converted_xmls = []
 for xml_file in os.listdir(xml_dir)[:]:
     print(xml_file)
+    if "2025.xml" in xml_file:
+        print(
+            "2025 xml file"
+        )
+        continue
+    
     if xml_file.replace(".xml", ".pdf") in converted_pdfs or xml_file in non_converted_xmls:
         print("xml already converted or non-convertable")
         continue
